@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(124, 137, 138);
+        margin-top: 50px;
+    }
+    h1{
+        
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        background-color: black;
+        margin-left: 250px;
+        margin-right: 250px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid white;
+    }
+
+</style>
+
+<body onload="setInterval(start,1000)">
+    <h1 id="innerText">
+
+    </h1>
+    <h1 id="innerText1">
+
+    </h1>
+
+    <script>
+   function start() 
+{
+       
+   
+   var innerText=document.getElementById("innerText");
+   var innerText1=document.getElementById("innerText1");
+   var time=new Date();
+   innerText.innerHTML=time.toLocaleTimeString();
+   var b=time.toString()
+   var c=b.slice(0,3)
+   innerText1.innerHTML=c
+   var d=time.toString()
+   var e=d.slice(3,7)
+   innerText1.innerHTML=e
+   var f=time.toString()
+   var g=f.slice(8,10)
+   innerText1.innerHTML=g
+   var h=time.toString()
+   var i=h.slice(10,15)
+   innerText1.innerHTML=i
+   innerText1.innerHTML=c+" , "+e+"  "+g+" , "+i;
+}
+start();
+   
+   
+ </script>
+</body>
+
+</html>
